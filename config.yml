@@ -1,0 +1,26 @@
+---
+## General pipeline parameters:
+
+# Name of the pipeline:
+pipeline: "pipeline-polya-diff"
+# ABSOLUTE path to directory holding the working directory:
+workdir_top: "Workspaces"
+# Repository URL:
+repo: "https://github.com/nanoporetech/pipeline-polya-diff"
+
+## Pipeline-specific parameters:
+
+control_tails:
+    wt_1: "wt-1/tails/filtered_tails.tsv"
+    wt_2: "wt-2/tails/filtered_tails.tsv"
+
+treated_tails:
+    mut_1: "mut-1/tails/filtered_tails.tsv"
+    mut_2: "mut-2/filtered_tails.tsv"
+
+min_reads_per_transcript: 10
+
+per_transcript_plots: "true"
+
+threads: 50
+
