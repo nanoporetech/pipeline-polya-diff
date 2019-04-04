@@ -10,17 +10,22 @@ repo: "https://github.com/nanoporetech/pipeline-polya-diff"
 
 ## Pipeline-specific parameters:
 
+# Control tail estimates
 control_tails:
     wt_1: "wt-1/tails/filtered_tails.tsv"
     wt_2: "wt-2/tails/filtered_tails.tsv"
 
+# Treated tail estimates
 treated_tails:
-    mut_1: "mut-1/tails/filtered_tails.tsv"
-    mut_2: "mut-2/filtered_tails.tsv"
+    mut_1: "mut1/tails/filtered_tails.tsv"
+    mut_2: "mut2/tails/filtered_tails.tsv"
 
+# Minimum reads per transcript
 min_reads_per_transcript: 10
 
+# Generate per-transcript plots
 per_transcript_plots: "true"
 
+# Threads
 threads: 50
 
