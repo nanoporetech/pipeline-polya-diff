@@ -26,7 +26,6 @@ rule merge_tsvs:
         treated = config["treated_tails"]
     output:
         mt = "merged/all_tails.tsv"
-    conda: "env.yml"
     run:
         dfs = []
         for sample, tsv in params.control.items():
